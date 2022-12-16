@@ -11,15 +11,31 @@
 </div>
 
 <div class="container-fluid i" style="padding: 5%;">
-
+    <div id="liveAlertPlaceholder"></div>
     <form method="post">
         {% csrf_token %}
         <ul class="list-group list-group-horizontal">
             <li class="list-group-item col-3">
-                Asunto:
+                Nombre completo:
             </li>
             <li class="list-group-item">
-                <input type="text" name="asunto">
+                <input type="text" name="nombre">
+            </li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item col-3">
+                Compañia:
+            </li>
+            <li class="list-group-item">
+                <input type="text" name="compania">
+            </li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item col-3">
+                Telefono:
+            </li>
+            <li class="list-group-item">
+                <input type="text" name="telefono">
             </li>
         </ul>  
         <ul class="list-group list-group-horizontal">
@@ -30,11 +46,19 @@
         </ul>
         <ul class="list-group list-group-horizontal">
             <li class="list-group-item col-3">
+                Asunto:
+            </li>
+            <li class="list-group-item">
+                <input type="text" name="asunto">
+            </li>
+        </ul>  
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item col-3">
             Mensaje: 
             </li>
             <li class="list-group-item"><textarea name="mensaje" id="" cols="45" rows="15"></textarea></li>
         </ul>
-        <input class="btn btn-success"type="submit" value="Enviar" id="">
+        <input class="btn btn-success"type="submit" value="Enviar" id="liveAlertPlaceholder">
 
              
     </form>

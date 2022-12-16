@@ -4,6 +4,8 @@ from django.views.generic.list import ListView
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.views import LogoutView
 from django.urls import reverse_lazy
+from django.core.mail import send_mail
+from django.conf import settings
 
 def index(request):
     return render(request, "base/Inicio.html")
@@ -35,6 +37,23 @@ def blog(request):
     return render(request, "base/Blog.html")
 
 def contacto(request):
+
+    if(request.method=="POST"):
+        subject = request.POST["asunto"]
+        message = f"""{request.POST['nombre']} le ha enviado un correo de contacto
+
+    {request.POST['mensaje']}
+        
+{request.POST['nombre']}
+{request.POST['compania']}
+{request.POST['email']}
+{request.POST['telefono']}"""
+
+        email_from = settings.EMAIL_HOST_USER
+        recipient_list = ["l18121591@morelia.tecnm.mx"]
+
+        send_mail(subject, message, email_from, recipient_list)
+
     return render(request, "base/Contacto.html")
 
 ## servicios

@@ -13,7 +13,7 @@
     <div class="col-10 " style="padding: 5% 10% 5% 10%;">
        <p>QUE REALIZAMOS</p>
        <h1>Contribuimos con su empresa para mejorar la toma de decisiones a traves de sus datos</h1>
-       <a class="btn btn-primary" href="#" role="button">Mas informacion</a>
+       <a class="btn btn-primary" href="{% url 'pagServicios' %}" role="button">Mas informacion</a>
     </div>
     <div class="container-fluid row" style="padding: 0% 2% 0 2%;">
         <div class="col-4">
@@ -42,6 +42,205 @@
           height: 250px;">
         </div>
       </div>
+
+      <div class="container-fluid row text-center" style="padding: 0% 2% 0 2%;">
+        <div id="carouselExampleControls" class="carousel carousel-dark slide col-4" data-bs-ride="carousel">
+          <p>Clientes</p>
+          <div class="carousel-inner" style="padding-left: 15%;">
+            <div class="carousel-item active">
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/grupopetersenfallback.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Grupo Petersen</h5>
+                  <p class="card-text">Grupo Petersen crea una cultura de datos con Tableau</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/redhatteaser.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Red Hat</h5>
+                  <p class="card-text">
+                    Red Hat adopta el Blueprint de Tableau y Tableau Online, y profundiza en la cultura de datos con más de 4500 empleados en menos de un año
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card align-self-center" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/verizon-homepage-tile-final-2x.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Verizon</h5>
+                  <p class="card-text">Verizon usa Tableau para reducir las llamadas de soporte en un 43% y así mejorar la experiencia del cliente</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card align-self-center" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/wholefoodsteaser1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Whole Foods</h5>
+                  <p class="card-text">
+                    Whole Foods Market democratiza el acceso a los datos en sus 460 tiendas para 18 000 empleados gracias a Tableau
+                    </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card align-self-center" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/mondelezteaser.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Mondelez International</h5>
+                  <p class="card-text">Mondelez International digitaliza la adquisición para integrar más de 160 campos de datos, 28 000 proveedores y generar millones en ahorro de costos</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card align-self-center" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/header_jpmc_1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">JPMorgan Chase</h5>
+                  <p class="card-text">JPMorgan Chase elige Tableau para ofrecer análisis de autoservicio y seguir el vertiginoso ritmo de los cambios en el sector</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div id="carouselExampleControls2" class="carousel carousel-dark slide col-4" data-bs-ride="carousel">
+          <p>Tecnologias</p>
+          <div class="carousel-inner" style="padding-left: 15%;">
+            <div class="carousel-item active">
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/balog.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Bussines Analyst</h5>
+                  <p class="card-text">Nuestra metodología de servicios se encuentra orientada en los estándares del Project Management Institute (PMI) ® e International Project Management Association (IPMA).</p>
+                  <a href="{% url 'pagBussines' %}" class="btn btn-primary">Mas informacion</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/code.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Desarrollo de aplicaciones</h5>
+                  <p class="card-text">El desarrollo de aplicaciones, una herramienta para obtener soluciones precisas, dándole tareas repetitivas a la computadora y logrando así la "automatización" de procesos que todavía requieren la intervención de las personas.</p>
+                  <a href="{% url 'pagDsoftware' %}" class="btn btn-primary">Mas informacion</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card align-self-center" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/balog.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Workshop</h5>
+                  <p class="card-text">Su estrategia debe abarcar la gestión de personas, procesos y cambios, incluida la identificación de casos de uso comercial inmediatos, la definición de roles, responsabilidades, el establecimiento de medidas para evaluar el éxito y el impacto.</p>
+                  <a href="{% url 'pagWorkshop' %}" class="btn btn-primary">Mas informacion</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card align-self-center" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/caplog.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Capacitación</h5>
+                  <p class="card-text">Nuestra gama de cursos de Tableau incluye: Tableau Prep Tableau Desktop Visual Analytics Tableau Server Adicionalmente ofrecemos cursos sobre: Business Intelligence, Data Mining, Big Data, Data to Insight. </p>
+                  <a href="{% url 'pagCapacitacion' %}" class="btn btn-primary">Mas informacion</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card align-self-center" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/vsoft.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Venta de software</h5>
+                  <p class="card-text">Nos dedicamos a la venta de licencias de software, podemos recomendarle los sistemas que de acuerdo a sus necesidades son más adecuados. </p>
+                  <a href="{% url 'pagVsoftware' %}" class="btn btn-primary">Mas informacion</a>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card align-self-center" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/vhar.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Venta de hardware</h5>
+                  <p class="card-text">Trabajamos con los mejores proveedores de México y tenemos la capacidad de cubrir cualquier necesidad que tenga de hardware. Redes, computadoras, impresoras y accesorios.</p>
+                  <a href="{% url 'pagVhardware' %}" class="btn btn-primary">Mas informacion</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div id="carouselExampleControls3" class="carousel carousel-dark slide col-4" data-bs-ride="carousel">
+          <p>Lo que ofrecemos</p>
+          <div class="carousel-inner" style="padding-left: 15%;">
+            <div class="carousel-item active">
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/tecnoly-tableau.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Tableau</h5>
+                  <p class="card-text">Tableau es la plataforma de análisis integral más eficaz, segura y flexible para sus datos. Potencie a las personas con el poder de los datos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/salesforce%20(2).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Salesforce</h5>
+                  <p class="card-text">Una plataforma que brinda a todos tus departamentos, incluidos marketing, ventas, comercio y servicios, una vista única y compartida de cada cliente.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card align-self-center" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/pmi2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Project Management Institute</h5>
+                  <p class="card-text">Esta organización sin fines de lucro asocia a empresas e instituciones relacionadas con la gestión de proyectos.</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card align-self-center" style="width: 18rem;">
+                <img src="https://www.turing-ia.com/assets/img/scrum.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Scrum</h5>
+                  <p class="card-text">Metodología para la gestión de proyectos complejos en los que se necesita obtener un resultado rápido en entornos muy cambiantes.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
     
 
 {% endblock content %}
