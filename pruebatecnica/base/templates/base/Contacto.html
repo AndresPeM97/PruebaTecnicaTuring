@@ -1,0 +1,43 @@
+{% extends "base/pagina.html" %}
+
+{% block content %}
+
+<img class="video-header" style="background-color: #131b85;" >
+</img>
+
+<div style="height:200px; padding-left: 8%; " >
+    <h1 style="color: white;"> <strong> <p>Escribenos</p> </h1>
+    <h2 style="color: white;"><p>Hacemos los datos faciles de usar</p> </h2>
+</div>
+
+<div class="container-fluid i" style="padding: 5%;">
+
+    <form method="post">
+        {% csrf_token %}
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item col-3">
+                Asunto:
+            </li>
+            <li class="list-group-item">
+                <input type="text" name="asunto">
+            </li>
+        </ul>  
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item col-3"> 
+                Email: 
+            </li>
+            <li class="list-group-item"><input type="text" name="email" id=""></li>
+        </ul>
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item col-3">
+            Mensaje: 
+            </li>
+            <li class="list-group-item"><textarea name="mensaje" id="" cols="45" rows="15"></textarea></li>
+        </ul>
+        <input class="btn btn-success"type="submit" value="Enviar" id="">
+
+             
+    </form>
+
+</div>
+{% endblock content %}

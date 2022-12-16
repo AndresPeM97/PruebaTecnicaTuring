@@ -4,79 +4,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Turing IA</title>
     <link rel="stylesheet" href="{% static 'style.css'%}">
     <script src = "{% static 'bootstrap.min.js' %}"></script>
 </head>
 <body">
     
-    <div style="height: 400px;">
+    <div style="height: 200px;">
         <div class = "barra" style="padding-left: 7%; padding-right: 5%; padding-top: 2%; ">
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                  <a class="navbar-brand col-7" href="#" style="color: white;"> <h1><strong>TURING-IA</strong></h1> </a>
+                  <a class="navbar-brand col-lg-5" href="{% url 'pagIndex' %}" style="color: white;"> <h1><strong>TURING-IA</strong></h1> </a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item" >
-                            <a class="nav-link" href="#" style="color: white;"><strong>Inicio</strong></a>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-light btn-md" href="{% url 'pagInicio' %}" ><strong>Inicio</strong></a>
                         </li>
-                        <li class="nav-item" >
-                            <a class="nav-link" href="#" style="color: white;"> <strong>Nosotros</strong> </a>
+                        <li class="nav-item" style="padding-left: 5px;">
+                            <a class="btn btn-outline-light btn-md" href="{% url 'pagNosotros' %}"> <strong>Nosotros</strong> </a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown" style="padding-left: 5px;">
+                            <a class="btn btn-outline-light btn-md" href="{% url 'pagServicios' %}">
                             <strong>Servicios</strong> 
                             </a>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Business Analyst</a></li>
-                            <li><a class="dropdown-item" href="#">Workshop</a></li>
-                            <li><a class="dropdown-item" href="#">Capacitacion</a></li>
-                            <li><a class="dropdown-item" href="#">Venta de software</a></li>
-                            <li><a class="dropdown-item" href="#">Venta de hardware</a></li>
-                            <li><a class="dropdown-item" href="#">Desarrollo de software</a></li>
-                            <li><a class="dropdown-item" href="#">Balanced Scorecard</a></li>
-                            </ul>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a style="color: white;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li>
+                          <div>
+                            <button type="button" class="btn btn-md btn-outline-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                              <span class="visually-hidden">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="{% url 'pagBussines' %}">Business Analyst</a></li>
+                              <li><a class="dropdown-item" href="{% url 'pagWorkshop' %}">Workshop</a></li>
+                              <li><a class="dropdown-item" href="{% url 'pagCapacitacion' %}">Capacitacion</a></li>
+                              <li><a class="dropdown-item" href="{% url 'pagVsoftware' %}">Venta de software</a></li>
+                              <li><a class="dropdown-item" href="{% url 'pagVhardware' %}">Venta de hardware</a></li>
+                              <li><a class="dropdown-item" href="{% url 'pagDsoftware' %}">Desarrollo de software</a></li>
+                              <li><a class="dropdown-item" href="{% url 'pagBalanced' %}">Balanced Scorecard</a></li>
+                            </ul>
+                          </div>
+                          
+                        </li>
+                        <li class="nav-item dropdown" style="padding-left: 5px;">
+                            <a class="btn btn-outline-light btn-md" href="{% url 'pagTableau' %}" >
                             <strong>Tableau</strong> 
                             </a>
-                            <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Desktop</a></li>
-                            <li><a class="dropdown-item" href="#">Prep</a></li>
-                            <li><a class="dropdown-item" href="#">Cloud</a></li>
-                            <li><a class="dropdown-item" href="#">Server</a></li>
-                            <li><a class="dropdown-item" href="#">Server Management</a></li>
-                            <li><a class="dropdown-item" href="#">Data Management</a></li>
-
+                        </li>
+                        <li>
+                          <button type="button" class="btn btn-md btn-outline-light dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="{% url 'pagDesktop' %}">Desktop</a></li>
+                            <li><a class="dropdown-item" href="{% url 'pagPrep' %}">Prep</a></li>
+                            <li><a class="dropdown-item" href="{% url 'pagCloud' %}">Cloud</a></li>
+                            <li><a class="dropdown-item" href="{% url 'pagServer' %}">Server</a></li>
+                            <li><a class="dropdown-item" href="{% url 'pagSmanage' %}">Server Management</a></li>
+                            <li><a class="dropdown-item" href="{% url 'pagDmanage' %}">Data Management</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white; font-weight: bold;">Portal</a>
+                        <li class="nav-item" style="padding-left: 5px;">
+                            <a class="btn btn-outline-light btn-md" href="{% url 'pagPortal' %}" style="font-weight: bold;">Portal</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;font-weight: bold">Blog</a>
+                        <li class="nav-item" style="padding-left: 5px;">
+                            <a class="btn btn-outline-light btn-md" href="{% url 'pagBlog' %}" style="font-weight: bold">Blog</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" style="color: white;font-weight: bold">Contacto</a>
+                        <li class="nav-item" style="padding-left: 5px;">
+                            <a class="btn btn-outline-light btn-md" href="{% url 'pagContacto' %}" style="font-weight: bold">Contacto</a>
                         </li>
                     </ul>
                   </div>
                 </div>
               </nav>
         </div>
-        <div style="height:1em; padding-left: 8%; padding-top: 4%;" >
-            <h1 style="color: white;"> <strong> <p>Bienvenido</p> </h1>
-            <h2 style="color: white;"><p>Hacemos los datos faciles de usar</p> </h2>
-                
-        </div>
+        
     </div>
-
+    
     {% block content %}
 
 
