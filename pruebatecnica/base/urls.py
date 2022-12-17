@@ -11,7 +11,8 @@ urlpatterns = [
     path("Portal/", portal.as_view(), name = "pagPortal"),
     path("PortalLogOut/", LogoutView.as_view(next_page = "pagPortal"), name="pagPortalLogOut"),
     path("PortalAuth/", views.portalauth, name = "pagPortalAuth"),
-    path("Blog/", views.blog, name = "pagBlog"),
+    path("Blog/", views.blogs, name = "pagBlog"),
+    path("Detalle/<int:pk>", DetalleBlog.as_view(), name = "pagDetalle"),
     path("Contacto/", views.contacto, name = "pagContacto"),
 
     ## servicios

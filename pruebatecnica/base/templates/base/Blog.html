@@ -2,4 +2,37 @@
 
 {% block content %}
 
+<video class="video-header"
+        src="https://drive.google.com/uc?export=download&id=1KJrqmU_F8f04alGCXZtPfAPpUeng0cqs" 
+        autoplay="true" muted="true" loop="true" poster="https://carontestudio.com/img/contacto.jpg">
+    </video>
+
+<div style="height:200px; padding-left: 8%; " >
+    <h1 style="color: white;">Blog</h1>
+    <h2 style="color: white;"><p>Los grandes conocimientos engendran las grandes dudas. </p> </h2>
+</div>
+
+<div class="container" style="padding: 5%;">
+
+    <div class="row justify-content-center">
+        {% for articulo in articulos %}
+        <div class="col" style="padding-top: 2%;">
+            <div class="card" style="width: 18rem;">
+                    <img src={{articulo.Imagen}} class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h6 class="card-title">{{articulo.Titulo}}</h6>
+                    <p class="card-text"> {{articulo.Encabezado}} </p>
+                    <a href="{% url 'pagDetalle' articulo.id %}" class="btn btn-primary">Leer Mas</a>
+                    </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    
+    
+    
+
+</div>
+
 {% endblock content %}

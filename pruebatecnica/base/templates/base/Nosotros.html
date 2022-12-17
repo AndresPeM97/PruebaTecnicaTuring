@@ -1,4 +1,5 @@
 {% extends "base/pagina.html" %}
+{% load static %}
 
 {% block content %}
 <video class="video-header"
@@ -7,17 +8,107 @@
     </video>
 
     <div style="height:200px; padding-left: 8%; " >
-        <h1 style="color: white;"> <strong> <p>Bienvenido</p> </h1>
-        <h2 style="color: white;"><p>Hacemos los datos faciles de usar</p> </h2>
+        <h1 style="color: white;"> <strong> <p>Nosotros</p> </h1>
+        <h2 style="color: white;"><p>Somos Especialistas en Proyectos de Business Analytics </p> </h2>
     </div>
     
+    <div class="container" style="padding-top: 5%;">
+        <div class="row align-items-start">
+            <div class="col">
+                <p style="color: blue;">¿QUIENES SOMOS?</p>
+                <h1>Turing-IA, tu mejor opción</h1>
+                <p>Somos una Empresa de Analítica e Inteligencia de Negocios en México con presencia internacional, conformada por especialistas en proyectos de Business Analytics. Contamos con mas de 15 años de experiencia brindando soluciones innovadoras en más de 10 industrias y diferentes áreas funcionales.
+                    Contamos con los mejores Especialistas en Análisis Descriptivos, Predictivos y Prescriptivos, equipados con las certificaciones más importantes en el desarrollo de Análisis de Datos mediante Knowledge Discovery in Database (KDD) </p>
+        
+            </div>
+            <div  class="col">
+                   <img src="https://www.turing-ia.com/assets/img/nosotros.webp" alt="">    
+            </div>
+        </div>
 
-    <div>
-        <p>contenido</p>
-        <p>contenido</p>
-        <p>contenido</p>
-        <p>contenido</p>
-        <p>contenido</p>
-        <p>contenido</p>
+        <div class="container-fluid" style="padding-top: 5%;">
+            <div class="row align-items-start" style=" background-color: rgb(163, 161, 161);">
+                <div  class="col">
+                       <ul style="list-style: none; text-align: center;">
+                        <li>
+                            Mas de 
+                        </li>
+                        <li>
+                            <h1>150 Clientes</h1>
+                        </li>
+                        <li style="padding-top: 15%;">
+                            Mas de 
+                        </li>
+                        <li>
+                            <h1>100 Proyectos</h1>
+                        </li>
+                        <li style="padding-top: 15%;">
+                            Mas de 
+                        </li>
+                        <li>
+                            <h1>15 Sectores industriales</h1>
+                        </li>
+                       </ul> 
+                </div>
+                <div class="col">
+                    <p style="color: blue;">BUSSINES INTELIGENCE</p>
+                    <h1>Ayudamos a la toma de decisiones en todos los niveles de la empresa: </h1>
+                    <p>Construimos e implementamos las soluciones que se ajusta a la medida de los retos actuales y futuros, de las organizaciones lideres en el mercado.
+                        Nuestro objetivo es transformar tus datos en oportunidades de negocio. ayudamos a la toma de decisiones en todos los niveles de la empresa.
+                        Con nuestras soluciones seras capaz de identificar tendencias de mercado, potenciar los recursos de la empresa, y crear planes de acción anticipando errores y amenazas para tus estrategias corporativas.  </p>
+            
+                </div>
+            </div>
+        </div>
+
+        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel" style="padding-top: 5%;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <p style="text-align: center;" >Nuestras metodologias</p>
+                <ul style="list-style: none; padding-left:15%;">
+                    <li>
+                        <img src="https://www.turing-ia.com/assets/img/pmi2%20(2).png" height="200px" width="400px" alt="...">
+                        <img src="https://www.turing-ia.com/assets/img/tableau_blueprint%20(2).png" height="200px"  width="400px" alt="...">
+                    </li>
+                    <li>
+                        <img src="https://www.turing-ia.com/assets/img/scrum.png" height="200px" width="400px"  alt="...">
+                        <img src="https://www.turing-ia.com/assets/img/data-driven%20(2).jpg" height="200px"  width="400px" alt="...">
+                    </li>
+                    <li>
+                        <img src="https://www.turing-ia.com/assets/img/bi-3.png" height="200px" alt="...">
+                    </li>
+                </ul>
+              </div>
+              <div class="carousel-item">
+                <p style="text-align: center;" >Nuestrso principales socios</p>
+                <ul style="list-style: none; padding-left:15%;">
+                    <li>
+                        <img src="https://www.turing-ia.com/assets/img/tableau-partner.png" width="200px" alt="...">
+                        <img src="https://www.turing-ia.com/assets/img/redhat.png" width="200px" alt="...">
+                        <img src="https://www.turing-ia.com/assets/img/salesforce.jpg" width="200px"  alt="...">
+                        <img src="https://www.turing-ia.com/assets/img/microsoft.png" width="200px"  alt="...">
+                    </li>
+                    <li>
+                        <img src="https://www.turing-ia.com/assets/img/dell.png" width="200px" alt="...">
+                        <img src="https://www.turing-ia.com/assets/img/kaspersky.png" width="200px" alt="...">
+                        <img src="https://www.turing-ia.com/assets/img/hp.png" width="200px" alt="...">
+                        <img src="https://www.turing-ia.com/assets/img/ibm.png" width="200px" alt="...">
+                    </li>
+                </ul>
+              </div>
+              <div class="carousel-item" style="padding-left: 35%;">
+                <img src="{% static 'Imagenes/premios.png' %}" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </div>
+        
 {% endblock content %}

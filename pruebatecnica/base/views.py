@@ -1,11 +1,12 @@
 from django.shortcuts import render
-from django.shortcuts import render
 from django.views.generic.list import ListView
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.views import LogoutView
+from django.views.generic.detail import DetailView
 from django.urls import reverse_lazy
 from django.core.mail import send_mail
 from django.conf import settings
+from base.models import blog
 
 def index(request):
     return render(request, "base/Inicio.html")
@@ -33,8 +34,16 @@ class portal(LoginView):
     def get_success_url(self):
         return reverse_lazy("pagPortalAuth")
 
-def blog(request):
-    return render(request, "base/Blog.html")
+def blogs(request):
+
+    articulos = blog.objects.all()
+
+    return render(request, "base/Blog.html", {"articulos":articulos})
+
+class DetalleBlog(DetailView):
+    model = blog
+    context_object_name = "articulo"
+    template_name = "base/DetalleArticulo.html" #predeterimado es "tarea_detail"
 
 def contacto(request):
 

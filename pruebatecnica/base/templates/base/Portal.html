@@ -1,21 +1,29 @@
 {% extends "base/pagina.html" %}
 
 {% block content %}
-<img class="video-header" style="background-color: #131b85;" >
+<img class="video-header" style="background-color: #131b85;" src="https://www.hostinger.es/tutoriales/wp-content/uploads/sites/7/2021/11/como-hacer-un-plan-de-negocios.png">
 </img>
 
 <div style="height:200px; padding-left: 8%; " >
-    <h1 style="color: white;"> <strong> <p>Portal</p> </h1>
-    <h2 style="color: white;"><p>Hacemos los datos faciles de usar</p> </h2>
+    <h1 style="color: white;"> <strong> <p>Customer Portal</p> </h1>
+
 </div>
-<div class="col-10 " style="padding: 5% 10% 5% 10%;">
-    <form method="post">
-        {% csrf_token %}
-        {{form.as_p}}
+    <div class="row" style="padding:5% 0 0 15%;">
+        <div class="col-5">
+            <form method="post">
+                {% csrf_token %}
+                {{form.as_p}}
+                <input class="btn btn-success" type="submit" value="Ingresar">
+            </form>
+        </div>
+        <div class="col">
+            <img src="https://www.turing-ia.com/portal/static/media/Portal.1000b5c33fb5eca8d918.webp" width="500px" alt="">
+
+        </div>
+    </div>
     
-        <input type="submit" value="Ingresar">
-    </form>
-</div>
+
+    
 
 
 {% endblock content %}

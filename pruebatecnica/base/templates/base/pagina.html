@@ -93,37 +93,7 @@
 
 
     <!-- Footer -->
-<footer class="text-center text-lg-start bg-light text-muted">
-    <!-- Section: Social media -->
-    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-      <!-- Left -->
-      
-      <!-- Left -->
-  
-      <!-- Right -->
-      <div>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-reset">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <!-- Right -->
-    </section>
-    <!-- Section: Social media -->
+<footer class="text-center text-lg-start bg-light text-muted" style="padding-top:5%;">
   
     <!-- Section: Links  -->
     <section class="" style="background-color: #131B85; color: white; padding-top: 2%;">
@@ -164,16 +134,16 @@
               Mapa de sitio
             </h6>
             <p>
-              <a href="#!" class="text-reset">Inicio</a>
+              <a href="{% url 'pagInicio'%}" class="text-reset">Inicio</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Nosotros</a>
+              <a href=" {% url 'pagNosotros' %} " class="text-reset">Nosotros</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Servicios</a>
+              <a href="{% url 'pagServicios' %}" class="text-reset">Servicios</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Tableau</a>
+              <a href="{% url 'pagTableau' %}" class="text-reset">Tableau</a>
             </p>
           </div>
           <!-- Grid column -->
@@ -185,25 +155,25 @@
               Nuestros servicios
             </h6>
             <p>
-              <a href="#!" class="text-reset">Implementacion de Proyectos (Business Analyst)</a>
+              <a href="{% url 'pagBussines' %}" class="text-reset">Implementacion de Proyectos (Business Analyst)</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Workshop (Blue Print)</a>
+              <a href="{% url 'pagWorkshop' %}" class="text-reset">Workshop (Blue Print)</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Capacitacion</a>
+              <a href="{% url 'pagCapacitacion' %}" class="text-reset">Capacitacion</a>
             </p>
             <p>
-              <a href="#!" class="text-reset">Venta de software</a>
+              <a href="{% url 'pagVsoftware' %}" class="text-reset">Venta de software</a>
             </p>
             <p>
-                <a href="#!" class="text-reset">Venta de hardware</a>
+                <a href="{% url 'pagVhardware' %}" class="text-reset">Venta de hardware</a>
             </p>
             <p>
-                <a href="#!" class="text-reset">Desarrollo de Aplicaciones</a>
+                <a href="{% url 'pagDsoftware' %}" class="text-reset">Desarrollo de Aplicaciones</a>
             </p>
             <p>
-                <a href="#!" class="text-reset">Balanced Scorecard</a>
+                <a href="{% url 'pagBalanced' %}" class="text-reset">Balanced Scorecard</a>
             </p>
           </div>
           <!-- Grid column -->

@@ -1,0 +1,22 @@
+{% extends "base/pagina.html" %}
+
+{% block content %}
+
+    <div style="height:200px; padding:0 8% 0 8%; " >
+        <h1 style="color: white;"> <strong> <p>{{articulo.Titulo}}</p> </h1>
+        <h2 style="color: white;"><p>{{articulo.Encabezado}}</p> </h2>
+    </div>
+    <img class="video-header" src={{articulo.Imagen}}>
+
+    <div style="padding: 8% 20% 8% 8%;">
+        <h5>{{articulo.Autor}}</h5>
+        <h5>{{articulo.Fecha}}</h5>
+        <h5 style="font-weight:bold;">Descripcion:</h5>
+        <p>{{articulo.Descripcion}}</p>
+        <hr style="height: 10px;background-color: black;">
+        {{articulo.Contenido | safe}}
+    </div>
+
+    
+
+{% endblock content %}
